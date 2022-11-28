@@ -3,6 +3,7 @@ services:
   name: ghost
   env: docker
   autoDeploy: false
+  region: singapore
   disk:
     name: ghost
     mountPath: /var/lib/ghost/content
@@ -29,6 +30,7 @@ services:
   name: mysql
   plan: standard
   env: docker
+  region: singapore
   repo: https://github.com/render-examples/mysql
   autoDeploy: false
   disk:
